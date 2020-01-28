@@ -1,0 +1,98 @@
+<form id="pagerForm" method="post" action="">
+	<input type="hidden" name="pageNum" value="1" />
+	<input type="hidden" name="numPerPage" value="20" />
+	<input type="hidden" name="orderField" value="" />
+
+ </form>
+
+<div class="pageHeader">
+	<form onsubmit="return navTabSearch(this);" action="" method="post">
+	<div class="searchBar">
+		
+		<table class="searchContent">
+			<tr>
+				<td>
+					标题：<input type="text" name="f_product_code" value=""/>
+				</td>
+				<td>
+					时间：<input type="text" name="f_product_code" class="date"/>
+				</td>
+				<td>
+					类别：<select><option>类别1</option><option>类别2</option></select>
+				</td>
+			</tr>
+		</table>
+		<div class="subBar">
+			<ul>
+				<li><div class="buttonActive"><div class="buttonContent"><button type="submit">查找</button></div></div></li>
+			</ul>
+		</div>
+	</div>
+	</form>
+</div>
+
+ <div class="pageContent">
+	<div class="panelBar">
+		<ul class="toolBar">
+			<li><a class="add" href="" target="navTab"><span>添加</span></a></li>
+			<li><a class="delete" target="selectedTodo" postType="string" title="确定要删除吗?" rel="ids" href=""><span>删除</span></a></li>
+		</ul>
+	</div>
+	<table class="table" width="100%" layoutH="138">
+		<thead>
+			<tr>
+				<th width="39"><input type="checkbox" group="ids" class="checkboxCtrl"></th>
+                <th >类别</th>
+				<th >标题</th>                
+				<th >作者</th>
+				<th >时间</th>
+				<th >状态</th>
+        <th type="del" width="10%">操作</th>
+			</tr>
+		</thead>
+		<tbody>
+         
+     <tr>
+        <td ><input type="checkbox" name="ids" value=""/></td>
+        		<td>类别1</td>
+				<td >最新动态最新动态最新动态最新动态</td>                    
+				<td >管理员</td>
+				<td >2014-09-15 13:05:00</td>
+				<td >已发布</td>
+        <td>
+        	<a href="&id=" target="navTab" title="编辑数据" >编辑</a>&nbsp;
+	         <a href="&ids=" target="ajaxTodo" title="该操作不可恢复，确认删除该数据吗？" >删除</a>
+				</td>
+     </tr>
+     <tr>
+        <td ><input type="checkbox" name="ids" value=""/></td>
+        		<td>类别2</td>
+				<td >最新动态最新动态最新动态最新动态1111</td>                    
+				<td >管理员</td>
+				<td >2014-09-15 13:05:00</td>
+				<td >已发布</td>
+        <td>
+        	<a href="&id=" target="navTab" title="编辑数据" >编辑</a>&nbsp;
+	         <a href="&ids=" target="ajaxTodo" title="该操作不可恢复，确认删除该数据吗？" >删除</a>
+				</td>
+     </tr>
+        
+		</tbody>
+	</table>
+
+	<div class="panelBar">
+	  <div class="pages">
+			<span>显示</span>
+			<select class="combox" name="numPerPage" onchange="navTabPageBreak({numPerPage:this.value})">
+				<option value="20" selected >20</option>
+				<option value="50" selected>50</option>
+				<option value="100" selected>100</option>
+				<option value="200" selected>200</option>
+			</select>
+			<span>条，共条</span>
+	  </div>
+		
+		<div class="pagination" targetType="navTab" totalCount="" numPerPage="2" pageNumShown="10" currentPage=""></div>
+
+  </div>
+ </div>

@@ -1,0 +1,23 @@
+@charset "utf-8";
+html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td { margin: 0; padding: 0; }
+img { border: 0 none; vertical-align: top; }
+ul, li { list-style-type: none; }
+body, input, select, button, textarea { font-size: 14px;font-family:"Microsoft YaHei",Tahoma, Helvetica, Arial, sans-serif;}
+button { cursor: pointer; }
+i,em,cite{font-style: normal; }
+html,body{border:0;height:100%;max-height:100%;overflow:hidden;}
+body{color:#50a2db;}
+a,a:link{color:#50a2db; text-decoration: none; }
+a:visited{  }
+a:active,a:hover {text-decoration: none; }
+a:focus{outline: none; }
+ 
+.fixed:after{content: "."; display: block; clear: both; height: 0; visibility: hidden; }
+.fixed{display: block; min-height: 1%; }
+*html .fixed { height: 1%; }
+.clear:after{content:"\20";display:block;height:0;clear:both;}
+.clear{zoom:1;}
+.more{ float: right; }
+.more a{ font-weight: normal; font-size: 12px; }
+.fl,.fr{ display: inline; float: left; }
+.fr{ float: right; }

@@ -1,0 +1,126 @@
+<form id="pagerForm" method="post" action="">
+	<input type="hidden" name="pageNum" value="1" />
+	<input type="hidden" name="numPerPage" value="20" />
+	<input type="hidden" name="orderField" value="" />
+
+ </form>
+
+<div class="pageHeader">
+	<form onsubmit="return navTabSearch(this);" action="" method="post">
+	<div class="searchBar">
+		
+		<table class="searchContent">
+			<tr>
+            	<td>
+					项目名称：
+					  <input type="text" name="f_product_code" value=""/>
+				</td>
+            	<td>
+					责任单位：
+					  <input type="text" name="f_product_code" value=""/>
+				</td>
+            	<td>所属区县：<select><option>AAA县</option><option>BBB区</option></select></td>
+                <td>类别：<select><option>类别1</option><option>类别2</option></select></td>
+                <td>级别：<select><option>省重点</option><option>市重点</option></select></td>
+				<td>年份： <input type="text" name="f_product_code" value="2014" readonly/></td>
+			</tr>
+            <tr>
+            	<td>月份：<select><option>1</option><option>2</option></select></td>
+            </tr>
+		</table>
+		<div class="subBar">
+			<ul>
+				<li><div class="buttonActive"><div class="buttonContent"><button type="submit">查找</button></div></div></li>
+			</ul>
+		</div>
+	</div>
+	</form>
+</div>
+
+ <div class="pageContent">
+	<div class="panelBar">
+		<ul class="toolBar">
+			<li><a class="add" target="navTab"><span>导出打印</span></a></li>
+            <li><a class="add" target="navTab" href="focus_project/formal/project_process_stat.html"><span>本年度项目报送情况统计</span></a></li>
+		</ul>
+	</div>
+	<table class="table" width="100%" layoutH="138">
+		<thead>
+			<tr>
+				<th width="20"><input type="checkbox" group="ids" class="checkboxCtrl"></th>
+				<th width="101" >项目名称</th>                
+				<th width="151" >建设时限</th>
+                <th width="28" >总投资</th>
+                <th width="29" >是否开工</th>
+                <th width="59" >开工日期</th>
+                <th width="137" >至上年底累计完成投资</th>
+				<th width="98" >年计划投资</th>
+				<th width="147" >至本月累计完成年度投资</th>
+				<th width="127" >完成年度计划比例（%）</th>
+				<th width="58" >本月状态</th>
+				<th width="74" >区县</th>
+				<th width="72" >级别</th>
+       			<th type="del" width="193">操作</th>
+			</tr>
+		</thead>
+		<tbody>
+         
+     <tr>
+        <td ><input type="checkbox" name="ids" value=""/></td>
+				<td >XXXX报送项目</td>                    
+				<td >2014-12-10至2015-10-11</td>
+                <td >231</td>
+                <td >是</td>
+                <td >2014-12</td>
+                <td >123</td>
+				<td >11</td>
+				<td >213</td>
+				<td >10%</td>
+				<td >已填</td>
+				<td >XX县</td>
+				<td >市重点</td>
+        <td>
+            <a href="focus_project/formal/project_process_detail_list.html" target="navTab" title="进度管理" >进度管理</a>&nbsp;&nbsp;
+        	<a href="focus_project/formal/project_process.html" target="navTab" title="进度填写" >填写</a>&nbsp;
+            <a href="focus_project/formal/project_process.html" target="navTab" title="进度催办" >催办</a>&nbsp;&nbsp;
+		</td>
+     </tr>
+      <tr>
+        <td ><input type="checkbox" name="ids" value=""/></td>
+				<td >XXXX报送项目</td>                    
+				<td >2014-12-10至2015-10-11</td>
+                <td >123</td>
+        <td >否</td>
+                <td >&nbsp;</td>
+                <td >111</td>
+				<td >23</td>
+				<td >131</td>
+				<td >20%</td>
+				<td >未填</td>
+				<td >XX县</td>
+				<td >县重点</td>
+        <td>
+        	<a href="focus_project/formal/project_process_detail_list.html" target="navTab" title="进度管理" >进度管理</a>&nbsp;&nbsp;
+        	<a href="focus_project/formal/project_process.html" target="navTab" title="进度填写" >填写</a>&nbsp;&nbsp;<a href="focus_project/formal/project_process.html" target="navTab" title="进度催办" >催办</a>&nbsp;&nbsp;
+		</td>
+     </tr>
+     
+		</tbody>
+	</table>
+
+	<div class="panelBar">
+	  <div class="pages">
+			<span>显示</span>
+			<select class="combox" name="numPerPage" onchange="navTabPageBreak({numPerPage:this.value})">
+				<option value="20" selected >20</option>
+				<option value="50" selected>50</option>
+				<option value="100" selected>100</option>
+				<option value="200" selected>200</option>
+			</select>
+			<span>条，共条</span>
+	  </div>
+		
+		<div class="pagination" targetType="navTab" totalCount="" numPerPage="2" pageNumShown="10" currentPage=""></div>
+
+  </div>
+ </div>

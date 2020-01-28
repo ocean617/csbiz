@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<title></title>
+
+<link href="dwz/themes/default/style.css" rel="stylesheet" type="text/css" />
+<link href="dwz/themes/css/core.css" rel="stylesheet" type="text/css" />
+<link href="dwz/uploadify/css/uploadify.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link href="themes/css/ieHack.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<script src="dwz/js/speedup.js" type="text/javascript"></script>
+<script src="dwz/js/jquery-1.4.4.js" type="text/javascript"></script>
+<script src="dwz/js/jquery.cookie.js" type="text/javascript"></script>
+<script src="dwz/js/jquery.validate.js" type="text/javascript"></script>
+<script src="dwz/js/jquery.bgiframe.js" type="text/javascript"></script>
+<script src="dwz/xheditor/xheditor-1.1.9-zh-cn.min.js" type="text/javascript"></script>
+<script src="dwz/uploadify/scripts/swfobject.js" type="text/javascript"></script>
+<script src="dwz/uploadify/scripts/jquery.uploadify.v2.1.0.js" type="text/javascript"></script>
+
+<script src="dwz/js/dwz.core.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.util.date.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.validate.method.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.regional.zh.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.barDrag.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.drag.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.tree.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.accordion.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.ui.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.theme.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.switchEnv.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.alertMsg.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.contextmenu.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.navTab.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.tab.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.resize.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.dialog.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.dialogDrag.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.cssTable.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.stable.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.taskBar.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.ajax.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.pagination.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.database.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.datepicker.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.effects.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.panel.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.checkbox.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.history.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.combox.js" type="text/javascript"></script>
+
+<!--
+<script src="bin/dwz.min.js" type="text/javascript"></script>
+-->
+<script src="dwz/js/dwz.regional.zh.js" type="text/javascript"></script>
+<script language="javascript" src="js/index.js" type="text/javascript"></script>
+</head>
+
+<body scroll="no">
+	<div id="layout">
+		<div id="header">
+			<div class="headerNav">
+				<a class="logo" >标志</a>
+				<ul class="nav">
+					<li>当前用户：河源市 XX局 李小刚</li>
+					<li><a href="" width="600">修改密码</a></li>
+					<li><a href="#">退出系统</a></li>
+				</ul>
+				<ul class="themeList" id="themeList">
+					<li theme="default"><div class="selected">蓝色</div></li>
+					<li theme="green"><div>绿色</div></li>
+					<!--<li theme="red"><div>红色</div></li>-->
+					<li theme="purple"><div>紫色</div></li>
+					<li theme="silver"><div>银色</div></li>
+					<li theme="azure"><div>天蓝</div></li>
+				</ul>
+			</div>
+
+			<!-- navMenu -->
+			
+		</div>
+
+		<div id="leftside">
+			<div id="sidebar_s">
+				<div class="collapse">
+					<div class="toggleCollapse"><div></div></div>
+				</div>
+			</div>
+			<div id="sidebar">
+				<div class="toggleCollapse"><h2>功能主菜单</h2><div>收缩</div></div>
+
+				<div class="accordion" fillSpace="sidebar">
+                
+					<div class="accordionHeader">
+						<h2><span>Folder</span>个人事项</h2>
+					</div>
+					<div class="accordionContent">
+						<ul class="tree treeFolder">
+							<li><a >待办事项</a>
+                            	<ul>
+                                	<li><a href="project/project_check_list.html" target="navTab" >入库审核事项</a></li>
+                                    <li><a href="project/project_back_check_list.html" target="navTab" >退库审核事项</a></li>
+                                </ul>
+                            </li>
+							<li><a >已办事项</a>
+                            	<ul>
+                                	<li><a href="project/project_check_list.html" target="navTab" >入库审核事项</a></li>
+                                    <li><a href="project/project_back_check_list.html" target="navTab" >退库审核事项</a></li>
+                                </ul>
+                            </li>
+						</ul>
+					</div>
+                    
+					<div class="accordionHeader">
+						<h2><span>Folder</span>项目储备库管理</h2>
+					</div>
+					<div class="accordionContent">
+						<ul class="tree treeFolder">
+						    <li><a >项目入库</a>
+                            	<ul>
+                                	<li><a href="project/project_add.html" target="navTab" >入库申请</a></li>
+                                	<li><a href="project/project_check_list.html" target="navTab" >入库审核</a></li>
+                                </ul>
+                            </li>
+                            <li><a  >项目退库</a>
+                            	<ul>
+                                	<li><a href="project/project_back_list.html" target="navTab" >退库申请</a></li>
+                                	<li><a href="project/project_back_check_list.html" target="navTab" >退库审核</a></li>
+                                </ul>
+                            </li>
+							<li><a href="project/project_list.html" target="navTab" rel="project_list">入库项目管理</a></li>
+							<li><a href="project/project_list.html" target="navTab" rel="project_list">退库项目管理</a></li>
+							<li><a href="project/project_process_list.html" target="navTab" rel="cntrctor_list">项目进度管理</a></li>
+                            
+						</ul>
+					</div>
+                    
+					<div class="accordionHeader">
+						<h2><span>Folder</span>重点项目计划管理</h2>
+					</div>
+					<div class="accordionContent">
+						<ul class="tree treeFolder">
+                            <li><a>正式项目管理</a>
+                               <ul>
+                                <li><a >项目计划管理</a>
+                                    <ul>
+                                        <li><a>计划填报</a>
+                                            <ul>
+                                                <li><a href="focus_project/formal/project_add.html" target="navTab" rel="focus_project_add">在线填报</a></li>
+                                                <li><a href="focus_project/formal/project_import.html" target="navTab" rel="focus_project_import">导入填报</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="focus_project/formal/project_check_list.html" target="navTab" rel="project_check_list">计划审核</a></li>
+                                        <li><a href="focus_project/formal/project_list.html" target="navTab" rel="project_check_li1st">计划管理</a></li>
+                                    </ul>
+                                </li>
+                               <li><a href="focus_project/formal/project_process_list.html" target="navTab" rel="keepfit_year_plan_result">项目进度管理</a></li>
+                               <li><a href="focus_project/formal/project_yearsum_stat.html" target="navTab" title="历年年度投资汇总查询" rel="everyday_list">历年年度投资汇总查询</a></li>
+
+                               <li><a>项目统计分析</a>
+                                   <ul>
+                                   		                                        <li><a href="focus_project/formal/project_stat.html" target="navTab" title="时序对比分析" rel="everyday_list">时序对比分析</a></li>
+                                        <li><a href="focus_project/formal/project_area_stat.html" target="navTab" title="区域对比分析" rel="everyday_list">区域对比分析</a></li>
+                                        <li><a href="focus_project/formal/project_ptype_stat.html" target="navTab" title="项目类型对比分析" rel="everyday_list">项目类型对比分析</a></li>
+                                   </ul>
+                               </li>
+                               <li><a href="focus_project/formal/project_history_list.html" target="navTab" title="往年计划查询" rel="problem_list">往年计划查询</a></li>
+                               </ul>
+                            </li>
+                            
+                            <li><a>预备项目管理</a>
+                               <ul>
+                                <li><a >项目计划管理</a>
+                                    <ul>
+                                        <li><a>计划填报</a>
+                                            <ul>
+                                                <li><a href="focus_project/prepare/project_add.html" target="navTab" rel="focus_project_add">在线填报</a></li>
+                                                <li><a href="focus_project/prepare/project_import.html" target="navTab" rel="focus_project_import">导入填报</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="focus_project/prepare/project_check_list.html" target="navTab" rel="project_check_list">计划审核</a></li>
+                                        <li><a href="focus_project/prepare/project_list.html" target="navTab" rel="project_check_li1st">计划管理</a></li>
+                                    </ul>
+                                </li>
+                               <li><a href="focus_project/prepare/project_process_list.html" target="navTab" rel="keepfit_year_plan_result">项目进度管理</a></li>
+                               </ul>
+                            </li>
+                            
+						</ul>
+					</div>
+
+					<div class="accordionHeader">
+						<h2><span>Folder</span>信息发布管理</h2>
+					</div>
+					<div class="accordionContent">
+						<ul class="tree treeFolder">
+                            <li><a href="article/item_list.html" target="navTab" rel="org_list" title="栏目管理">栏目管理</a></li>
+                            <li><a href="article/article_list.html"  target="navTab" rel="right_list" title="公开信息管理">公开信息管理</a></li>
+						</ul>
+					</div>
+
+					<div class="accordionHeader">
+						<h2><span>Folder</span>配置管理</h2>
+					</div>
+					<div class="accordionContent">
+						<ul class="tree treeFolder">
+                            <li><a href="org/org_list.html" target="navTab" rel="org_list" title="机构用户管理">机构用户管理</a></li>
+                            <li><a   target="navTab" rel="right_list" title="权限管理">权限管理</a></li>
+							<li><a   target="navTab" rel="right_list" title="权限管理">项目设置</a></li>
+						</ul>
+					</div>
+                    
+                    
+				</div>
+
+			</div>
+		</div>
+		<div id="container">
+			<div id="navTab" class="tabsPage">
+				<div class="tabsPageHeader">
+					<div class="tabsPageHeaderContent"><!-- 显示左右控制时添加 class="tabsPageHeaderMargin" -->
+						<ul class="navTab-tab">
+							<li tabid="main" class="main"><a href="javascript:;"><span><span class="home_icon">我的主页</span></span></a></li>
+						</ul>
+					</div>
+					<div class="tabsLeft">left</div><!-- 禁用只需要添加一个样式 class="tabsLeft tabsLeftDisabled" -->
+					<div class="tabsRight">right</div><!-- 禁用只需要添加一个样式 class="tabsRight tabsRightDisabled" -->
+					<div class="tabsMore">more</div>
+				</div>
+				<ul class="tabsMoreList">
+					<li><a href="javascript:;">我的主页</a></li>
+				</ul>
+				<div class="navTab-panel tabsPageContent layoutBox">
+					<div class="page">
+                    <br /><br /><br />
+                    <center>
+					  <img src="images/home.png" /></center>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="footer">版权所有 河源市发改局 系统支持电话 0000-8888 9999</div>
+</body>
+</html>

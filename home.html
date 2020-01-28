@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<title></title>
+
+<link href="dwz/themes/default/style.css" rel="stylesheet" type="text/css" />
+<link href="dwz/themes/css/core.css" rel="stylesheet" type="text/css" />
+<link href="dwz/uploadify/css/uploadify.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link href="themes/css/ieHack.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<script src="dwz/js/speedup.js" type="text/javascript"></script>
+<script src="dwz/js/jquery-1.4.4.js" type="text/javascript"></script>
+<script src="dwz/js/jquery.cookie.js" type="text/javascript"></script>
+<script src="dwz/js/jquery.validate.js" type="text/javascript"></script>
+<script src="dwz/js/jquery.bgiframe.js" type="text/javascript"></script>
+<script src="dwz/xheditor/xheditor-1.1.9-zh-cn.min.js" type="text/javascript"></script>
+<script src="dwz/uploadify/scripts/swfobject.js" type="text/javascript"></script>
+<script src="dwz/uploadify/scripts/jquery.uploadify.v2.1.0.js" type="text/javascript"></script>
+
+<script src="dwz/js/dwz.core.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.util.date.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.validate.method.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.regional.zh.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.barDrag.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.drag.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.tree.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.accordion.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.ui.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.theme.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.switchEnv.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.alertMsg.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.contextmenu.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.navTab.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.tab.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.resize.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.dialog.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.dialogDrag.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.cssTable.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.stable.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.taskBar.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.ajax.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.pagination.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.database.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.datepicker.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.effects.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.panel.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.checkbox.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.history.js" type="text/javascript"></script>
+<script src="dwz/js/dwz.combox.js" type="text/javascript"></script>
+
+<!--
+<script src="bin/dwz.min.js" type="text/javascript"></script>
+-->
+<script src="dwz/js/dwz.regional.zh.js" type="text/javascript"></script>
+<script language="javascript" src="js/index.js" type="text/javascript"></script>
+
+<script language="javascript" src="js/ui.core.js" type="text/javascript"></script>
+<script language="javascript" src="js/ui.dropdownchecklist.js" type="text/javascript"></script>
+
+<style type="text/css">
+	#header{height:85px}
+	#leftside, #container, #splitBar, #splitBarProxy{top:90px}
+	
+	.ui-dropdownchecklist {
+	height: 20px;
+	border: 1px solid #ddd;
+	border-right: 0;
+	background: #fff url(dropdown.png) no-repeat center right;
+}
+.ui-dropdownchecklist-hover, .ui-dropdownchecklist-active {
+	background-image: url(dropdown_hover.png);
+	border-color: #5794bf;
+}
+
+.ui-dropdownchecklist-text {
+	font-size: 14px;
+	height: 20px;
+	line-height: 20px;
+	margin-right: 17px; /* background dropdown.png image */
+}
+
+.ui-dropdownchecklist-dropcontainer {
+	background-color: #fff;
+	border: 1px solid #999;
+}
+
+.ui-dropdownchecklist-item {
+
+}
+
+.ui-dropdownchecklist-item-hover {
+	background-color: #39f;
+}
+
+.ui-dropdownchecklist-item-disabled label {
+	color: #ccc;
+}
+
+.ui-dropdownchecklist-item-hover .ui-dropdownchecklist-text {
+	color: #fff;
+}
+
+.ui-dropdownchecklist-group {
+	font-weight: bold;
+	font-style: italic;
+}
+
+</style>
+</head>
+
+<body scroll="no">
+	<div id="layout">
+		<div id="header">
+			<div class="headerNav">
+				<a class="logo" >标志</a>
+				<ul class="nav">
+					<li>当前用户：河源市 XX局 李小刚</li>
+					<li><a href="" width="600">修改密码</a></li>
+					<li><a href="#">退出系统</a></li>
+				</ul>
+				<ul class="themeList" id="themeList">
+					<li theme="default"><div class="selected">蓝色</div></li>
+					<li theme="green"><div>绿色</div></li>
+					<!--<li theme="red"><div>红色</div></li>-->
+					<li theme="purple"><div>紫色</div></li>
+					<li theme="silver"><div>银色</div></li>
+					<li theme="azure"><div>天蓝</div></li>
+				</ul>
+			</div>
+
+			<!-- navMenu -->
+			<div id="navMenu">
+				<ul>
+					<li class="selected"><a href="menu1.html"><span>个人工作台</span></a></li>
+					<li><a href="menu2.html"><span>项目储备库管理</span></a></li>
+					<li><a href="menu3.html"><span>重点项目计划管理</span></a></li>
+					<li><a href="menu4.html"><span>系统管理</span></a></li>
+				</ul>
+			</div>
+            
+		</div>
+
+		<div id="leftside">
+			<div id="sidebar_s">
+				<div class="collapse">
+					<div class="toggleCollapse"><div></div></div>
+				</div>
+			</div>
+			<div id="sidebar">
+				<div class="toggleCollapse"><h2>功能主菜单</h2><div>收缩</div></div>
+
+				<div class="accordion" fillSpace="sidebar">
+					 <div class="accordionContent">
+						<ul class="tree treeFolder">
+							<li><a >我的项目</a>
+                            	<ul>
+                                	<li><a href="project/project_check_list.html" target="navTab" rel="my_proj_1">我的储备入库项目</a></li>
+                                    <li><a href="project/project_check_list.html" target="navTab" rel="my_proj_2">我的储备退库项目</a></li>
+                                    <li><a href="project/project_check_list.html" target="navTab" rel="my_proj_3">我的重点正式项目</a></li>
+                                    <li><a href="project/project_check_list.html" target="navTab" rel="my_proj_4">我的重点预备项目</a></li>
+                                </ul>
+                            </li>
+							<li><a >审批事项</a>
+                            	<ul>
+                                	<li><a href="project/project_check_list.html" target="navTab" >入库审核事项</a></li>
+                                    <li><a href="project/project_back_check_list.html" target="navTab" >退库审核事项</a></li>
+                                </ul>
+                            </li>
+							<li><a >已办事项</a>
+                            	<ul>
+                                	<li><a href="project/project_check_list.html" target="navTab" >入库审核事项</a></li>
+                                    <li><a href="project/project_back_check_list.html" target="navTab" >退库审核事项</a></li>
+                                </ul>
+                            </li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div id="container">
+			<div id="navTab" class="tabsPage">
+				<div class="tabsPageHeader">
+					<div class="tabsPageHeaderContent"><!-- 显示左右控制时添加 class="tabsPageHeaderMargin" -->
+						<ul class="navTab-tab">
+							<li tabid="main" class="main"><a href="javascript:;"><span><span class="home_icon">我的主页</span></span></a></li>
+						</ul>
+					</div>
+					<div class="tabsLeft">left</div><!-- 禁用只需要添加一个样式 class="tabsLeft tabsLeftDisabled" -->
+					<div class="tabsRight">right</div><!-- 禁用只需要添加一个样式 class="tabsRight tabsRightDisabled" -->
+					<div class="tabsMore">more</div>
+				</div>
+				<ul class="tabsMoreList">
+					<li><a href="javascript:;">我的主页</a></li>
+				</ul>
+				<div class="navTab-panel tabsPageContent layoutBox">
+					<div class="page">
+                    <br /><br /><br />
+                    <center>
+					  <img src="images/home.png" /></center>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="footer">版权所有 河源市发改局 系统支持电话 0000-8888 9999</div>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<style type="text/css">
+.tab_list {border:1px solid #47191C; border-width:0px 1px 1px 0px; line-height:30px; text-align:center}
+</style>
+<h2 class="contentTitle" >项目计划审核</h2>
+<div class="pageContent">
+  <form method="post" class="pageForm required-validate" >
+		<div class="pageFormContent nowrap" layoutH="97">
+             
+                <div class="tabsContent" style="height:500px;">
+                    <div>
+                        <p>
+                        <label>建设类别：</label>
+                        	<select readonly>
+                            	<option value="类别1">计划新开工</option>
+                                <option value="类别2">续建 </option>
+                                <option value="类别3">计划投产</option>
+                            </select>
+                         </p>
+                         <p>
+                         <label>项目类别：</label>
+                         <select readonly>
+                            	<option value="类别1">申报省重点项目</option>
+                                <option value="类别2">申报市重点项目</option>
+                            </select>
+                         </p>
+                         <p>
+                            <label>项目名称：</label>
+                            <input name="sn" type="text" size="30" value="100001" readonly/>
+                        </p>
+                        
+                        <p>
+                            <label>涉及地区：</label>
+                            <input name="sn" type="text" size="5" value="2014" readonly/>
+                        </p>
+                        <p>
+                            <label>项目类型：</label>
+                            <input name="sn" type="text" size="5" value="2015" readonly/>
+                        </p>
+                         <div class="divider"></div>
+                        <p>
+                            <label>项目地址：</label>
+                            <input name="sn" type="text" size="30" value="XXXX市XXXX区" readonly/>
+                        </p>
+                        
+                        <p style="clear:both">
+                            <label>占地面积：</label>
+                            <input name="sn" type="text" size="30" value="XXXX" readonly/>平方米
+                        </p>
+                        <p >
+                            <label>业主单位：</label>
+                            <input name="sn" type="text" size="30" value="" readonly/>
+                        </p>
+                        <p >
+                            <label>开始年份：</label>
+                            <input name="sn" type="text" size="30" value="" readonly/>
+                        </p>
+                        <p >
+                            <label>结束年份：</label>
+                            <input name="sn" type="text" size="30" value="" readonly/>
+                        </p>
+                        <p >
+                            <label>负责人：</label>
+                            <input name="sn" type="text" size="30" value="" readonly/>
+                        </p>
+                         <p >
+                            <label>负责人电话：</label>
+                            <input name="sn" type="text" size="30" value="" readonly/>
+                        </p>
+                         <p >
+                            <label>联系人：</label>
+                            <input name="sn" type="text" size="30" value="" readonly/>
+                        </p>
+                         <p >
+                            <label>联系人电话：</label>
+                            <input name="sn" type="text" size="30" value="" readonly/>
+                        </p>
+                        <p >
+                            <label>开工日期：</label>
+                            <input name="sn" type="text" size="30" value="" class="date" readonly/>
+                        </p>
+                         <p >
+                            <label>预计骏工日期：</label>
+                            <input name="sn" type="text" size="30" value="" class="date" readonly/>
+                        </p>
+                         <p >
+                            <label>批准总投资：</label>
+                            <input name="sn" type="text" size="25" value="" readonly/>万元
+                        </p>
+                        <p >
+                            <label>年计划投资：</label>
+                            <input name="sn" type="text" size="25" value="" readonly/>万元
+                        </p>
+                        <div class="divider"></div>
+                        <p >
+                            <label>建设内容及规模：</label>
+                            <textarea name="a" cols="120" rows="5" readonly></textarea>
+                        </p>
+                        
+                        
+                    </div>
+                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    <div>
+                   	  <table width="80%" border="0" cellspacing="0" cellpadding="0" class="tab_list">
+                    	   <tr>
+                    	     <td width="17%" height="29" bgcolor="#CEE0F0">总投资资金来源
+                    	       (须与审批部门批准文件一致)</td>
+                  	     </tr>
+                    	   <tr>
+                    	     <td ><p >
+                    	       <label>中央财政资金：</label>
+                    	       <input name="p.zycz_money" type="text" size="25" value="" readonly/>
+                    	       万元 </p>
+                    	       <p >
+                    	         <label>省财政资金：</label>
+                    	         <input name="p.scz_money" type="text" size="25" value="" readonly/>
+                    	         万元 </p>
+                    	       <p >
+                    	         <label>市财政资金：</label>
+                    	         <input name="p.citycz_money" type="text" size="25" value="" readonly/>
+                    	         万元 </p>
+                    	       <p >
+                    	         <label>县财政资金：</label>
+                    	         <input name="p.xcz_money" type="text" size="25" value="" readonly/>
+                    	         万元 </p>
+                    	       <p >
+                    	         <label>企业自有资金：</label>
+                    	         <input name="p.self_money" type="text" size="25" value="" readonly/>
+                    	         万元 </p>
+                    	       <p >
+                    	         <label>外商投资：</label>
+                    	         <input name="p.ws_money" type="text" size="25" value="" readonly/>
+                    	         万元 </p>
+                    	       <p >
+                    	         <label>银行贷款：</label>
+                    	         <input name="p.bank_money" type="text" size="25" value="" readonly/>
+                    	         万元 </p>
+                    	       <p >
+                    	         <label>其他资金：</label>
+                    	         <input name="p.other_money" type="text" size="25" value="" readonly/>
+                    	         万元 </p></td>
+                  	     </tr>
+                    	   <tr>
+                    	     <td >年度投资计划资金来源</td>
+                  	     </tr>
+                    	   <tr>
+                    	     <td><p >
+                    	       <label>中央财政资金：</label>
+                    	       <input name="p.zycz_money1" type="text" size="25" value="" readonly/>
+                    	       万元 </p>
+                    	       <p >
+                    	         <label>省财政资金：</label>
+                    	         <input name="p.scz_money1" type="text" size="25" value="" readonly/>
+                    	         万元 </p>
+                    	       <p >
+                    	         <label>市财政资金：</label>
+                    	         <input name="p.citycz_money1" type="text" size="25" value="" readonly/>
+                    	         万元 </p>
+                    	       <p >
+                    	         <label>县财政资金：</label>
+                    	         <input name="p.xcz_money1" type="text" size="25" value="" readonly/>
+                    	         万元 </p>
+                    	       <p >
+                    	         <label>企业自有资金：</label>
+                    	         <input name="p.self_money1" type="text" size="25" value="" readonly/>
+                    	         万元 </p>
+                    	       <p >
+                    	         <label>外商投资：</label>
+                    	         <input name="p.ws_money1" type="text" size="25" value="" readonly/>
+                    	         万元 </p>
+                    	       <p >
+                    	         <label>银行贷款：</label>
+                    	         <input name="p.bank_money1" type="text" size="25" value="" readonly/>
+                    	         万元 </p>
+                    	       <p >
+                    	         <label>其他资金：</label>
+                    	         <input name="p.other_money1" type="text" size="25" value="" readonly/>
+                    	         万元 </p></td>
+                  	     </tr>
+               	      </table>
+                    </div>
+                    <br /><br /><br /><br />        
+                  <div>
+                    	<p >
+                            <label>年度工程进度目标：</label>
+                            <textarea name="a" cols="100" rows="5"></textarea>
+                        </p>
+                        <br /><br /><br /><br /><br /><br /><br /><br /><br />
+                        <p >
+                            <label>新增生产能力或效益：</label>
+                            <textarea name="a" cols="100" rows="5"></textarea>
+                        </p>
+                    </div>
+                    	 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    <div>
+                   	  <table width="800" border="1" cellspacing="0" cellpadding="0">
+                    	   <tr>
+                    	     <td  height="29" bgcolor="#CEE0F0"><strong>前期工作进度</strong></td>
+                    	     <td  bgcolor="#CEE0F0"><strong>进展情况</strong></td>
+                    	     <td  bgcolor="#CEE0F0"><strong>审批文号</strong></td>
+                    	     <td  bgcolor="#CEE0F0"><strong>审批时间</strong></td>
+                  	     </tr>
+                    	   <tr>
+                    	     <td height="32">项目审批、核准或备案情况</td>
+                    	     <td><textarea name="a2" cols="35" rows="5"></textarea></td>
+                    	     <td><input name="sn2" type="text" size="25" value="" /></td>
+                    	     <td><input name="sn10" type="text" size="25" value="" class="date" /></td>
+                  	     </tr>
+                    	   <tr>
+                    	     <td height="29">规划选址</td>
+                    	     <td><textarea name="a3" cols="35" rows="5"></textarea></td>
+                    	     <td><input name="sn3" type="text" size="25" value="" /></td>
+                    	     <td><input name="sn11" type="text" size="25" value="" class="date" /></td>
+                  	     </tr>
+                    	   <tr>
+                    	     <td>用地预审或用地审批</td>
+                    	     <td><textarea name="a4" cols="35" rows="5"></textarea></td>
+                    	     <td><input name="sn4" type="text" size="25" value="" /></td>
+                    	     <td><input name="sn12" type="text" size="25" value="" class="date" /></td>
+                  	     </tr>
+                    	   <tr>
+                    	     <td>环境影响评价</td>
+                    	     <td><textarea name="a5" cols="35" rows="5"></textarea></td>
+                    	     <td><input name="sn5" type="text" size="25" value="" /></td>
+                    	     <td><input name="sn13" type="text" size="25" value="" class="date" /></td>
+                  	     </tr>
+                    	   <tr>
+                    	     <td>初步设计</td>
+                    	     <td><textarea name="a6" cols="35" rows="5"></textarea></td>
+                    	     <td><input name="sn6" type="text" size="25" value="" /></td>
+                    	     <td><input name="sn14" type="text" size="25" value="" class="date" /></td>
+                  	     </tr>
+                    	   <tr>
+                    	     <td>招标投标情况</td>
+                    	     <td><textarea name="a7" cols="35" rows="5"></textarea></td>
+                    	     <td><input name="sn7" type="text" size="25" value="" /></td>
+                    	     <td><input name="sn15" type="text" size="25" value="" class="date" /></td>
+                  	     </tr>
+                    	   <tr>
+                    	     <td>征地拆迁</td>
+                    	     <td><textarea name="a8" cols="35" rows="5"></textarea></td>
+                    	     <td><input name="sn8" type="text" size="25" value="" /></td>
+                    	     <td><input name="sn16" type="text" size="25" value="" class="date" /></td>
+                  	     </tr>
+                    	   <tr>
+                    	     <td>其他前期工作</td>
+                    	     <td><textarea name="a9" cols="35" rows="5"></textarea></td>
+                    	     <td><input name="sn9" type="text" size="25" value="" /></td>
+                    	     <td><input name="sn17" type="text" size="25" value="" class="date" /></td>
+                  	     </tr>
+               	      </table>
+                    </div>
+                    
+                    <div>
+                    	<p >
+                            <label>项目简介：</label>
+                          <textarea name="a" cols="100" rows="8" readonly></textarea>
+                        </p>
+                        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                        <p >
+                            <label>备注：</label>
+                            <textarea name="a" cols="100" rows="5" readonly></textarea>
+                        </p>
+                    </div>
+                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    
+                     <div>
+                    	<p >
+                            <label>初审意见：</label>
+                            <select>
+                            	<option >同意</option>
+                                <option >不同意</option>
+                                <option >其他预选意见</option>
+                            </select>
+                            <textarea name="a" cols="100" rows="5" ></textarea>
+                        </p>
+                        <br /><br /><br /><br /><br /><br /><br /><br /><br />
+                        <p >
+                            <label>终审意见：</label>
+                            <select>
+                            	<option >同意</option>
+                                <option >不同意</option>
+                            </select>
+                            <textarea name="a" cols="100" rows="5" ></textarea>
+                        </p>
+                    </div>
+                     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    <div>
+                    	<table class="table" width="100%" >
+                            <thead>
+                                <tr>
+                                    <th >审核人</th>    
+                                    <th >时间</th>             
+                                    <th >环节</th>
+                                    <th >意见</th>
+                                    <th >是否通过</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                             
+                         <tr style="height:23px">
+                                    <td >XX区刘大明</td>  
+                                    <td >2014-09-15 15:33:00</td>                         
+                                    <td >审核</td>
+                                    <td >同意</td>
+                                    <td >通过</td>
+                         </tr>
+                         <tr style="height:23px">
+                                    <td >XX区王军</td>  
+                                    <td >2014-09-14 09:33:00</td>                         
+                                    <td >初审</td>
+                                    <td >同意该申请，满足入库条件</td>
+                                    <td >通过</td>
+                         </tr>
+                         
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    
+                </div>
+               
+        </div>
+		<div class="formBar">
+			<ul>
+                <li><div class="buttonActive"><div class="buttonContent"><button type="submit">退回上一步</button></div></div></li>
+				<li><div class="buttonActive"><div class="buttonContent"><button type="submit">提交下一步审核</button></div></div></li>
+				<li><div class="button"><div class="buttonContent"><button type="button" class="close">取消</button></div></div></li>
+			</ul>
+		</div>
+	</form>
+	
+</div>
+

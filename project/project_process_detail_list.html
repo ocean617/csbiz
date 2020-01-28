@@ -1,0 +1,98 @@
+<form id="pagerForm" method="post" action="">
+	<input type="hidden" name="pageNum" value="1" />
+	<input type="hidden" name="numPerPage" value="20" />
+	<input type="hidden" name="orderField" value="" />
+
+ </form>
+
+<div class="pageHeader">
+	<form onsubmit="return navTabSearch(this);" action="" method="post">
+	<div class="searchBar">
+		
+		<table class="searchContent">
+			<tr>
+            	<td>季度：
+            	  <select>
+            	    <option>1</option>
+            	    <option>2</option>
+            	    <option>3</option>
+            	    <option>4</option>
+           	    </select></td>
+                <td>年份： <input type="text" name="f_product_code" value=""/></td>
+			</tr>
+		</table>
+		<div class="subBar">
+			<ul>
+				<li><div class="buttonActive"><div class="buttonContent"><button type="submit">查找</button></div></div></li>
+			</ul>
+		</div>
+	</div>
+	</form>
+</div>
+
+ <div class="pageContent">
+	<div class="panelBar">
+		<ul class="toolBar">
+        	<li><a class="add" target="navTab" href="project/project_process.html" rel="new_project_process"><span>填报进度</span></a></li>
+			<li><a class="add" target="navTab"><span>删除</span></a></li>
+		</ul>
+	</div>
+	<table class="table" width="100%" layoutH="138">
+		<thead>
+			<tr>
+				<th width="20"><input type="checkbox" group="ids" class="checkboxCtrl"></th>
+				<th width="217" >项目名称</th>                
+				<th width="127" >项目类别</th>
+                <th width="127" >进度阶段</th>
+				<th width="51" >年度</th>
+				<th width="61" >季度</th>
+				<th width="314" >项目单位</th>
+				<th width="169" >填报时间</th>
+       			<th type="del" width="180">操作</th>
+			</tr>
+		</thead>
+		<tbody>
+         
+     <tr>
+        <td ><input type="checkbox" name="ids" value=""/></td>
+				<td >XXXX报送项目</td>                    
+				<td >类别1</td>
+                <td >环评</td>
+				<td >2013</td>
+				<td >1</td>
+				<td >XXXX单位</td>
+				<td >2013-12-15</td>
+        <td><a class="add" target="navTab" href="project/project_process.html" rel="new_project_process"><span>编辑</span></a>
+        删除</td>
+     </tr>
+      <tr style="color:red1">
+        <td ><input type="checkbox" name="ids" value=""/></td>
+				<td >XXXX报送项目</td>                    
+				<td >类别1</td>
+                <td >测试</td>
+				<td >2013</td>
+		<td >2</td>
+				<td >XXXX单位</td>
+				<td >2013-12-15</td>
+        <td><a class="add" target="navTab" href="project/project_process.html" rel="new_project_process"><span>编辑</span></a> 删除</td>
+     </tr>
+     
+		</tbody>
+	</table>
+
+	<div class="panelBar">
+	  <div class="pages">
+			<span>显示</span>
+			<select class="combox" name="numPerPage" onchange="navTabPageBreak({numPerPage:this.value})">
+				<option value="20" selected >20</option>
+				<option value="50" selected>50</option>
+				<option value="100" selected>100</option>
+				<option value="200" selected>200</option>
+			</select>
+			<span>条，共条</span>
+	  </div>
+		
+		<div class="pagination" targetType="navTab" totalCount="" numPerPage="2" pageNumShown="10" currentPage=""></div>
+
+  </div>
+ </div>
